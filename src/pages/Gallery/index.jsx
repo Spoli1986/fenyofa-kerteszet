@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
-import Forrest from '../../assets/pictures/IMG_5090.JPG';
+import Forrest from '../../assets/images/startpage_pic.jpg';
 // import {pinetree} from "@fenyo"  
 import TreeCloseUp from '../../assets/images/fir-tree-gc3b098ea8_1920.jpg';
 export default function Gallery() {

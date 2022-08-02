@@ -31,15 +31,18 @@ export default function Gallery() {
   const pictures = importAll(require.context('../../assets/pictures', false, /\.(png|jpe?g|JPG|svg)$/));
 
   return (
-    <div class={`flex items-center justify-center ${galleryState === 'open' ? 'h-full' : 'pb-3'} md:h-screen bg-gray-100`}>
-      <img src={TreeCloseUp} alt="Tree" class={`md:w-2/3 ${galleryState === 'open' ? 'hidden' : 'absolute' }`} />
-      <div class="flex justify-center items-center md:w-2/4 h-full mt-1 z-10">
+    <div class={`flex items-center justify-center ${galleryState === 'open' ? 'h-full' : 'pb-3'} md:h-screen bg-gray-200`}>
+      <img src={TreeCloseUp} alt="Tree" class={`invisible md:visible md:w-2/3 ${galleryState === 'open' ? 'hidden' : 'absolute' }`} />
+      <div class="flex flex-col justify-center items-center md:w-2/4 h-full mt-1 z-10">
         {galleryState === "closed" ? 
+          <>
+          <div class="text-center md:text-xl md:text-white"> A galéria megnyitásához kattintson <span class="text-green-400 cursor-pointer" onClick={zoomIn}>ide</span> vagy a képekre!</div>
           <div class="grid grid-rows-2 grid-cols-2 p-4 shadow-xl shadow-gray-500 cursor-pointer hover:bg-none" onClick={zoomIn}>
           {Object.keys(pictures).slice(0,4).map((picture) => {
             return <img class="md:w-72 md:h-72 w-40 h-40 m-4" alt="pic" src={pictures[picture]} />
           })}
           </div>
+          </>
           : 
           (
             <div class="w-full flex flex-col">

@@ -33,7 +33,7 @@ export default function Header() {
             class="text-gray-200 md:text-2xl text-xl rounded-sm md:w-40 md:h-16 text-center md:mt-5"
           >
             
-          Menu
+          Menü
           </Button>
           
           <Menu
@@ -46,10 +46,10 @@ export default function Header() {
             }}
             class="md:w-40"
           >
-            <MenuItem onClick={handleClose}><a href="/">Start Page</a></MenuItem>
-            <MenuItem onClick={handleClose}><a href="/gallery">Gallery</a></MenuItem>
-            <MenuItem onClick={handleClose}><a href="/contactus">Contact Us</a></MenuItem>
-            <MenuItem onClick={handleClose}><a href="/findus">Find Us</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/">Kezőlap</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/gallery">Galéria</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/contactus">Kapcsolat</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/findus">Útvonal</a></MenuItem>
           </Menu>
         </div>
         <div>

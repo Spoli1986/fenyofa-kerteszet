@@ -10,10 +10,10 @@ export default function Footer() {
                 <img src={Logo} alt="Logo" class="h-28 pb-2 md:pb-0" />
                 <div class="p-10">Copyright©fenyofa-kerteszet.hu</div>
                 <tr class="flex flex-col items-center pt-3">
-                    <td>Spolàr Attila</td>
+                    <td>Spolár Attila</td>
                     <td>8840</td>
-                    <td>Csurgò</td>
-                    <td>Jòzsef A u 7</td>
+                    <td>Csurgó</td>
+                    <td>József A. utca 7</td>
                     <td>Tel: +36 30 336 08 58</td>
                     <td>Email: spolarattila2@citromail.hu</td>
                 </tr>

@@ -46,7 +46,7 @@ export default function ContactUs() {
         <div class=" flex items-center justify-center h-10 bg-gray-200 text-gray-500 text-2xl shadow-md md:w-1/4 m-2">
         </div>
         <form onSubmit={onSubmit} class="flex flex-col bg-slate-100 shadow-xl w-full md:w-1/4">
-          <label htmlFor="" class="text-gray-500 pl-2">Name</label>
+          <label htmlFor="" class="text-gray-500 pl-2">Név</label>
           <input
             type='text'
             name='from_name'
@@ -54,7 +54,7 @@ export default function ContactUs() {
             onChange={handleChange}
             class="outline-0 border-0 border-b-2 border-b-gray-200 m-2"
           />
-          <label htmlFor="" class="text-gray-500 pl-2">Message</label>
+          <label htmlFor="" class="text-gray-500 pl-2">Üzenet</label>
           <textarea
             type='textarea'
             name='message'
@@ -62,7 +62,7 @@ export default function ContactUs() {
             onChange={handleChange}
             class="outline-0 border-0 border-b-2 border-b-gray-200 m-2"
           />
-          <label htmlFor="" class="text-gray-500 pl-2">Your Email</label>
+          <label htmlFor="" class="text-gray-500 pl-2">Az ön email címe</label>
           <input
             type='text'
             name='your_email'
@@ -70,7 +70,7 @@ export default function ContactUs() {
             onChange={handleChange}
             class="outline-0 border-0 border-b-2 border-b-gray-200 m-2"
           />
-          <label htmlFor="" class="text-gray-500 pl-2">Phone Number</label>
+          <label htmlFor="" class="text-gray-500 pl-2">Telefonszáma</label>
           <input
             type='text'
             name='phone_number'
@@ -78,7 +78,7 @@ export default function ContactUs() {
             onChange={handleChange}
             class="outline-0 border-0 border-b-2 border-b-gray-200 m-2"
           />
-          <button type='submit' class="cursor-pointer text-green-500 m-2 text-xl">Submit</button>
+          <button type='submit' class="cursor-pointer text-green-500 m-2 text-xl">Küldés</button>
         </form>
       </div>
     </div>

@@ -37,13 +37,13 @@ export class MapContainer extends Component {
     return (
       <div class="flex flex-col items-center h-screen">
         <div class="flex-col items-center justify-center py-20">
-          <div class="bg-menuBackground/50 rounded-md shadow-md shadow-menuBackground text-gray-200">
-            <h1 class="text-center">Our Address is</h1>
-            <span>Street: Eötwös str</span><br />
-            <span>City: Csurgô</span><br />
-            <span>For route click
-                  <a class="text-red-600" href="https://www.google.com/maps/dir//'46.248997,17.101704'" rel='noreferrer' target="_blank"> here </a>
-                  (link to Google Maps)
+          <div class="bg-menuBackground/70 rounded-md shadow-md shadow-menuBackground text-gray-200 text-xl p-2 mx-2">
+            <h1 class="text-center">A címünk</h1>
+            <span>Utca: Eötwös utca</span><br />
+            <span>Város: Csurgó</span><br />
+            <span>Az útvonalhoz kattintson
+                  <a class="text-red-600" href="https://www.google.com/maps/dir//'46.248997,17.101704'" rel='noreferrer' target="_blank"> ide </a>
+                  (átirányítás a Google maps-re)
             </span>
           </div>
         </div>

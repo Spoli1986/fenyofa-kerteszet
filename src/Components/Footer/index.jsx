@@ -13,7 +13,7 @@ export default function Footer() {
                     <td>Spolár Attila</td>
                     <td>8840</td>
                     <td>Csurgó</td>
-                    <td>József A. utca 7</td>
+                    <td>Eötvös utca 20</td>
                     <td>Tel: +36 30 336 08 58</td>
                     <td>Email: spolarattila2@citromail.hu</td>
                 </tr>

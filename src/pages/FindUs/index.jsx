@@ -39,7 +39,7 @@ export class MapContainer extends Component {
         <div class="flex-col items-center justify-center py-20">
           <div class="bg-menuBackground/70 rounded-md shadow-md shadow-menuBackground text-gray-200 text-xl p-2 mx-2">
             <h1 class="text-center">A címünk</h1>
-            <span>Utca: Eötwös utca</span><br />
+            <span>Utca: Eötvös utca 20</span><br />
             <span>Város: Csurgó</span><br />
             <span>Az útvonalhoz kattintson
                   <a class="text-red-600" href="https://www.google.com/maps/dir//'46.248997,17.101704'" rel='noreferrer' target="_blank"> ide </a>

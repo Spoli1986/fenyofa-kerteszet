@@ -46,7 +46,7 @@ export default function Header() {
             }}
             class="md:w-40"
           >
-            <MenuItem onClick={handleClose}><a href="/">Kezőlap</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="/">Kezdőlap</a></MenuItem>
             <MenuItem onClick={handleClose}><a href="/gallery">Galéria</a></MenuItem>
             <MenuItem onClick={handleClose}><a href="/contactus">Kapcsolat</a></MenuItem>
             <MenuItem onClick={handleClose}><a href="/findus">Útvonal</a></MenuItem>

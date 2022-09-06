@@ -6,6 +6,7 @@ import FindUs from './pages/FindUs';
 import Gallery from './pages/Gallery';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import Api from './pages/ApiTest';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/findus" element={<FindUs />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/api" element={<Api />} />
       </Routes>
       <Footer />
     </Router>

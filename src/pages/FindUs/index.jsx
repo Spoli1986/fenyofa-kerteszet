@@ -31,23 +31,26 @@ export class MapContainer extends Component {
       position: 'relative',
       width: '70%',
       height: '60%',
-      '@media screen and (max-width: 992px)': {width: '100%'},
+      '@media screen and (maxWidth: 992px)': {width: '100%', height:'100%'},
     }
 
     return (
-      <div class="flex flex-col items-center h-screen">
-        <div class="flex-col items-center justify-center py-20">
-          <div class="bg-menuBackground/70 rounded-md shadow-md shadow-menuBackground text-gray-200 text-xl p-2 mx-2">
-            <h1 class="text-center">A címünk</h1>
-            <span>Utca: Eötvös utca 20</span><br />
-            <span>Város: Csurgó</span><br />
-            <span>Az útvonalhoz kattintson
-                  <a class="text-red-600" href="https://www.google.com/maps/dir//'46.248997,17.101704'" rel='noreferrer' target="_blank"> ide </a>
-                  (átirányítás a Google maps-re)
-            </span>
+      <div class="flex flex-col items-center justify-around h-screen">
+        <div class="flex-col items-center justify-center w-screen md:w-1/3">
+          <div class="text-center bg-gray-100/30 rounded-md shadow-md shadow-gray-300 text-menuBackground px-4 py-8 md:mx-2">
+            <h1 class="text-2xl italic mb-4"><strong> A címünk:</strong></h1>
+            <p class="text-xl">
+              Utca: Eötvös utca 20.<br />
+              Város: Csurgó<br />
+              Ir.szám: 8840
+            </p>
           </div>
         </div>
-      {/* <div class="flex justify-center items-center border-2 border-red-600" style={{height: '88vh'}}> */}
+        <div class="text-gray-500 text-center">
+        Az útvonalhoz kattintson
+                  <a class="text-red-500 hover:text-red-700" href="https://www.google.com/maps/dir//'46.248997,17.101704'" rel='noreferrer' target="_blank"> ide </a>
+                  (átirányítás a Google maps-re)
+        </div>
         <>
           <Map
             containerStyle={containerStyle}
@@ -62,7 +65,7 @@ export class MapContainer extends Component {
             >
             <Marker
               title={'Your destination'}
-              name={'Fenyo-Kerteszet'}
+              name={'Fenyofa-Kerteszet'}
               position={{lat: 46.248997, lng: 17.101704}} />
             <InfoWindow
               marker={this.state.activeMarker}
